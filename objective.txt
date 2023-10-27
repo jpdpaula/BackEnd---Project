@@ -1,0 +1,63 @@
+Users
+ int id (chave primária - primary key)
+ string name
+ string lastName
+ int age
+ string adress
+ string email (campo único)
+ string password
+ string cpf (campo único)
+
+
+Products 
+ int id (primary key)
+ string pName
+ string pPrice
+ string pColor
+ string pDescription
+ int pQuantity
+ string img
+ 
+
+Stores
+ int id (primary key)
+ string address
+ string city
+ string state
+ string country
+ string cnpj (campo único)
+ string phoneNumber
+ string email
+ 
+
+Salesperson
+ int id (primary key)
+ string name
+ string lastName
+ string phoneNumber
+ string cpf (campo único)
+ string email
+ string address
+ 
+criar as models para o projeto
+criar uma "tela" de opções - As opções serão 3 (
+	1. Cadastrar Vendedor
+	2. Cadastrar Cliente
+	3. Cadastrar Produto
+	4. Sair
+)
+
+cada tela de cadastro vai solicitar os dados das models
+de acordo com sua tela
+
+Criar um método que será chamado ao selecionar para Sair.
+
+Em cada tela de cadastro, ao final do cadastro, mostrar as observações obtidas e
+perguntar se a pessoa quer cadastrar um novo (vendedor, cliente ou produto)
+Se a resposta for SIM, voltar para o início do cadastro. Se a resposta for NÃO, 
+voltar para a tela principal com as 4 opções iniciais.
+
+As telas vamos criar dentro do pacote View
+Os metódos (e classes) vamos criar dentro do pacote Services quando ele fizer alguma
+ação
+Models serão criadas dentro do pacote Domain
